@@ -2,6 +2,15 @@
 
 This project provides an MCP (Multi-Channel Pipeline) server that acts as a wrapper for the MLB Stats API.  It allows you to easily access and process various MLB data points, including schedules, game results, and team information.  This server is designed for efficient data retrieval and processing within an MCP framework.
 
+## Demo Videos
+
+Here are a couple of demo videos showcasing the capabilities of `mcp_mlb_statsapi`:
+* **Demo 1:  MCP MLB Stats API - Quick Overview**
+- [![Quick Overview](https://img.youtube.com/vi/cnqbcB8064k/0.jpg)](https://youtu.be/cnqbcB8064k "demo 1")
+* **Demo 2:  MCP MLB Stats API - 輸入中文也可以**
+- [![輸入中文也可以](https://img.youtube.com/vi/XhuyfIWKLjY/0.jpg)](https://youtu.be/XhuyfIWKLjY "demo 2")
+
+
 ## Features
 
 * **Game Schedules:** Retrieve MLB game schedules for specified date ranges, optionally filtering by team.
@@ -79,4 +88,10 @@ Contributions are welcome! Please open an issue or submit a pull request.
 ## License
 
 This MCP server is licensed under the MIT License. This means you are free to use, modify, and distribute the software, subject to the terms and conditions of the MIT License. For more details, please see the LICENSE file in the project repository.
+
+## References
+
+This project utilizes the following external libraries and resources:
+
+* **MLB-StatsAPI:**  [https://github.com/toddrob99/MLB-StatsAPI](https://github.com/toddrob99/MLB-StatsAPI) -  A Python library providing access to the MLB Stats API.  This project relies heavily on `mlb-statsapi` for data retrieval.
 
