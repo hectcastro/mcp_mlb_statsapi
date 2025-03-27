@@ -11,44 +11,65 @@ This project provides an MCP (Multi-Channel Pipeline) server that acts as a wrap
 
 ## Installation
 
+#### Prerequisites
+- Python 3.10 or newer
+- uv package manager: 
+
+**If you're on Mac, please install uv as**
+```bash
+brew install uv
+```
+**On Windows**
+```bash
+powershell -c "irm https://astral.sh/uv/install.ps1 | iex" 
+```
+Otherwise installation instructions are on their website: [Install uv](https://docs.astral.sh/uv/getting-started/installation/)
+
+#### Install via PyPI
 The `mcp_mlb_statsapi` package is available on PyPI and can be installed using `pip`:
 
 ```bash
 pip install mcp_mlb_statsapi
 ```
 
+#### Install via Github
 or you can clone this repo, run it with soruce code.
+```bash
+uv venv
+source .venv/bin/activate
+uv pip install -r requirements.txt
+```
 
-## Usage
-
-The server exposes several tools via MCP.  You can interact with them using the MCP client.
-
-### Claude for Desktop Integration
+#### Claude for Desktop Integration
 Go to Claude > Settings > Developer > Edit Config > claude_desktop_config.json to include the following:
 
 ```json
-    "mcpServers": {
+    {
+      "mcpServers": {
         "mcp_mlb_statsapi": {
-            "command": "{YOUR_PYTHON_EXECUTABLE_PATH}/python",
+           "command": "{YOUR_PYTHON_EXECUTABLE_PATH}/python",
             "args": ["-m",
             "mcp_mlb_statsapi"]
-            }
+          }
         }
     }
 ```
 
 If you install it via source code
 ```json
-    {
-        "mcpServers": {
-            "mcp_mlb_statsapi": {
-                "command": "{YOUR_UV_EXECUTABLE_PATH}/uvx",
-                "args": [
-                    "mcp_mlb_statsapi"
-                ]
-            }
-        }
+{
+  "mcpServers": {
+    "mcp_mlb_statsapi": {
+        "command": "{YOUR_UV_EXECUTABLE_PATH}/uv",
+        "args": [
+            "--directory",
+            "{YOUR_PROJECT_PATH}/src/mcp_mlb_statsapi",
+            "run",
+            "mcp_mlb_statsapi"
+        ]
     }
+  }
+}
 ```
 
 ## Contributing
