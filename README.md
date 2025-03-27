@@ -17,21 +17,39 @@ The `mcp_mlb_statsapi` package is available on PyPI and can be installed using `
 pip install mcp_mlb_statsapi
 ```
 
+or you can clone this repo, run it with soruce code.
+
 ## Usage
 
 The server exposes several tools via MCP.  You can interact with them using the MCP client.
 
-* **Add server in your Claude files**
+### Claude for Desktop Integration
+Go to Claude > Settings > Developer > Edit Config > claude_desktop_config.json to include the following:
+
 ```json
     "mcpServers": {
-    "mcp_mlb_statsapi": {
-        "command": "{YOUR_PYTHON_EXECUTABLE_PATH}/python",
-        "args": ["-m", "mcp_mlb_statsapi"]
+        "mcp_mlb_statsapi": {
+            "command": "{YOUR_PYTHON_EXECUTABLE_PATH}/python",
+            "args": ["-m",
+            "mcp_mlb_statsapi"]
             }
         }
     }
 ```
 
+If you install it via source code
+```json
+    {
+        "mcpServers": {
+            "mcp_mlb_statsapi": {
+                "command": "{YOUR_UV_EXECUTABLE_PATH}/uvx",
+                "args": [
+                    "mcp_mlb_statsapi"
+                ]
+            }
+        }
+    }
+```
 
 ## Contributing
 
