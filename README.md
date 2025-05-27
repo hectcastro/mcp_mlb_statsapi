@@ -1,6 +1,6 @@
 # baseball-mcp: An MLB Stats API Wrapper for MCP
 
-This project provides an MCP (Multi-Channel Pipeline) server that acts as a wrapper for the MLB Stats API.  It allows you to easily access and process various MLB data points, including schedules, game results, and team information.  This server is designed for efficient data retrieval and processing within an MCP framework.
+This project provides an MCP (Model Context Protocol) that acts as a wrapper for the MLB Stats API.  It allows you to easily access and process various MLB data points, including schedules, game results, and team information.  This server is designed for efficient data retrieval and processing within an MCP framework.
 
 ## Demo Videos
 
