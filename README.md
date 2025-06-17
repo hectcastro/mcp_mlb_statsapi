@@ -1,5 +1,3 @@
-[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/mpizza-mcp-mlb-statsapi-badge.png)](https://mseep.ai/app/mpizza-mcp-mlb-statsapi)
-
 # baseball-mcp: An MLB Stats API Wrapper for MCP
 
 This project provides an MCP (Model Context Protocol) that acts as a wrapper for the MLB Stats API.  It allows you to easily access and process various MLB data points, including schedules, game results, and team information.  This server is designed for efficient data retrieval and processing within an MCP framework.
@@ -97,3 +95,5 @@ This project utilizes the following external libraries and resources:
 
 * **MLB-StatsAPI:**  [https://github.com/toddrob99/MLB-StatsAPI](https://github.com/toddrob99/MLB-StatsAPI) -  A Python library providing access to the MLB Stats API.  This project relies heavily on `mlb-statsapi` for data retrieval.
 
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/mpizza-mcp-mlb-statsapi-badge.png)](https://mseep.ai/app/mpizza-mcp-mlb-statsapi)
+[![Verified on MseeP](https://mseep.ai/badge.svg)](https://mseep.ai/app/45b7cf1b-10ee-4ba0-8bf5-90a464b0f860)
